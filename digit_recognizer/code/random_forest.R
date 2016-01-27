@@ -16,7 +16,7 @@ featureNumbers <- floor(ncol(trainFeatures) ^ (1 / c(3, 2.5, 2, 1.5)))
 # Calculate OOB errors for each model
 outOfBagErrors <- matrix(nrow = length(sampleSizes),
                          ncol = length(featureNumbers))
-numTrees <- 400
+numTrees <- 600
 for (i in 1:nrow(outOfBagErrors))
 {
   sampleSize <- sampleSizes[i]
