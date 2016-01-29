@@ -1,3 +1,9 @@
+## The following achieves a public test set accuracy of 0.96743
+## Parameters of randomForest chosen by lowest out-of-bag error, with 400 trees,
+## are:
+##   sampsize = 33600 (80% of training set size)
+##   mtry = 80 (total number of features to the power of 2/3)
+
 library(doParallel)
 library(randomForest)
 
